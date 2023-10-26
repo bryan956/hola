@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('pay_modes', function (Blueprint $table) {
             $table->id();
-            $table->string('name',100)->nullable();
-            $table->text('description')->nullable();
+            $table->string('name',50)->nullable();
+            $table->text('description',200);
             $table->timestamps();
         });
     }
